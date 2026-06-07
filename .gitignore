@@ -1,0 +1,33 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.egg
+
+# Spark checkpoints
+checkpoints/
+
+# Logs
+logs/
+*.log
+
+# Docker
+*.tar
+
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+
+# Snowflake credentials
+snowflake/*.json
+snowflake/*.p8
+
+# OS
+.DS_Store
+Thumbs.db

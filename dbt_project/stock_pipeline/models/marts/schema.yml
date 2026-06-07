@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: mart_daily_stock_summary
+    description: "Daily OHLCV aggregates per stock"
+    columns:
+      - name: symbol
+        tests:
+          - not_null
+      - name: trade_date
+        tests:
+          - not_null
+      - name: total_volume
+        tests:
+          - not_null

@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_stock_prices
+    description: "Deduplicated raw stock prices from Snowflake"
+    columns:
+      - name: symbol
+        description: "Stock symbol"
+        tests:
+          - not_null
+      - name: event_timestamp
+        description: "Time of the price tick"
+        tests:
+          - not_null
+      - name: close
+        description: "Closing price"
+        tests:
+          - not_null
+      - name: volume
+        description: "Trade volume"
+        tests:
+          - not_null
