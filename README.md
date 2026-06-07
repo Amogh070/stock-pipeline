@@ -6,12 +6,13 @@ This project is an end-to-end real-time data engineering pipeline that ingests s
 
 The project demonstrates modern data engineering practices including event-driven architecture, stream processing, cloud data warehousing, data modeling, and workflow orchestration.
 
+
 ---
 
 ## Architecture
 
 ```text
-Stock API
+Yahoo API
     │
     ▼
 Kafka Producer
